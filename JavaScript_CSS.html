@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: cyan;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#myDiv {
+  transform: rotateX(150deg);
+}
+}
+</style>
+<script>
+function test()
+{
+let divElement = document.querySelector("#myDiv");
+divElement.classList.remove("transform");
+}
+</script>
+<body>
+<h1>JavaScript Events</h1>
+<button onclick="document.getElementById('demo').innerHTML=Date()">Touch me to get the current time</button>
+<br><br><br>
+<button onclick=test()">Remove CSS Transform</button>
+<br><br><br>
+<div id="myDiv">
+Rotate X
+</div>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+</body>
+</html>
 
